@@ -1,8 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿model Lanches.ViewModels.LancheListViewModel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <h1>Preferidos da Semana!</h1>
+    <p> </p>
+    <h4>Escolha o seu!</h4>
+</div>
+
+<div class="row">
+    foreach (var lanche in Model.Lanches)
+    {
+        <!-- <partial name="_LanchesResumo" for="lanche" /> -->
+    }
 </div>
