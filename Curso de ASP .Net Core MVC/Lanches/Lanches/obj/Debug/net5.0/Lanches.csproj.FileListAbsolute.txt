@@ -55,7 +55,6 @@ E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Lanches.Tag
 E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Lanches.TagHelpers.output.cache
 E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Lanches.RazorCoreGenerate.cache
 E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
@@ -145,3 +144,9 @@ E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\bin\Debug\net5.0\runtimes\wi
 E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Lanches.csproj.AssemblyReference.cache
 E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Lanche\List.cshtml.g.cs
 E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Shared\_LanchesResumo.cshtml.g.cs
+E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\CarrinhoCompra\Index.cshtml.g.cs
+E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Shared\_Carousel.cshtml.g.cs
+E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Shared\Components\CarrinhoCompraResumo\Default.cshtml.g.cs
+E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Contato\Index.cshtml.g.cs
+E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoriaMenu\Default.cshtml.g.cs
+E:\Udemy\Curso de ASP .Net Core MVC\Lanches\Lanches\obj\Debug\net5.0\Razor\Views\Lanche\Details.cshtml.g.cs

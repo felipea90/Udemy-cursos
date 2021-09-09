@@ -43,12 +43,13 @@ namespace Lanches.Models
             };
         }
 
-        public void AdicionarAoCarrinho(Lanche lanche, int quantidade)
+        public void AdicionarAoCarrinho(Lanche lanche)
         {
             //obttem o lanche do carrinho 
             var carrinhoCompraItem =
                     _context.CarrinhoCompraItems.SingleOrDefault(
-                        s => s.Lanche.LancheId == lanche.LancheId && s.CarrinhoCompraId == CarrinhoCompraId);
+                        s => s.Lanche.LancheId == lanche.LancheId && 
+                             s.CarrinhoCompraId == CarrinhoCompraId);
 
             //se o carrinho for null cria um carrinho novo
             if (carrinhoCompraItem == null)

@@ -1,25 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Lanches.Repositories;
+using Lanches.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace Lanches.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private ILancheRepository _lancheRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(
+            ILancheRepository lancheRepository)
         {
-            _logger = logger;
+            _lancheRepository = lancheRepository;
         }
 
-        public IActionResult Index()
+         public IActionResult Index()
         {
-            return View();
-        }
+            var homeViewModel = new HomeViewModel
+            {
+                LanchesPreferidos = _lancheRepository.LanchesPreferidos
+            };
 
-        public IActionResult Privacy()
-        {
-            return View();
+            return View(homeViewModel);
         }
 
     }

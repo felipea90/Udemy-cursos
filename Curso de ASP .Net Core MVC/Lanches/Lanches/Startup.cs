@@ -33,6 +33,9 @@ namespace Lanches
 
             services.AddScoped(cp => CarrinhoCompra.GetCarrinho(cp));
 
+            services.AddMemoryCache();
+            services.AddSession();
+
             services.AddControllersWithViews();
             
         }
@@ -52,13 +55,26 @@ namespace Lanches
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
+
             app.UseSession();
+
             app.UseRouting();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "AdminArea",
+                    pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                    name: "categoriaFiltro",
+                    pattern: "Lanche/{action}/{categoria?}",
+                    defaults: new { controller = "Lanche", action = "List" });
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

@@ -34,7 +34,7 @@ using Lanches.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b01508f3e0fb4cccca93fca761883a5835252c78", @"/Views/Lanche/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1a4561eee2281109a292c3b328e271ab1cac3bc1", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"954ce923433bc5ec1b679f16128afdfd86b19cae", @"/Views/_ViewImports.cshtml")]
     public class Views_Lanche_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Lanches.ViewModels.LancheListViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_LanchesResumo", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
