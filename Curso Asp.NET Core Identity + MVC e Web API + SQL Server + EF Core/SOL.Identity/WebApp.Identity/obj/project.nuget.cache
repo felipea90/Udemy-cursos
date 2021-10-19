@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EMD4sUM6YwVOldg3qSOtUubbf7jmTiad2s0GQRftX6FJcS8jjYUip+swebpGwa7RUPlRCaIj03ngw/B3LVyj7Q==",
+  "dgSpecHash": "9t6GnHallAXVjYviHQfNAXrtlxvkYWzrbTVBTX6DdOdAWuuxVJ5lx7qEW+S/Qf6t5beLES1H+8pZ5tu7sxyNAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\felip\\Documents\\Udemy-cursos\\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\\SOL.Identity\\WebApp.Identity\\WebApp.Identity.csproj",
+  "projectFilePath": "C:\\Users\\felip\\Documents\\Cursos\\Udemy\\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\\SOL.Identity\\WebApp.Identity\\WebApp.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\felip\\.nuget\\packages\\dapper\\1.60.6\\dapper.1.60.6.nupkg.sha512",
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",

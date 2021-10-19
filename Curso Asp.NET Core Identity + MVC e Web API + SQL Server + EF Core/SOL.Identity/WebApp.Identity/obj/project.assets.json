@@ -13104,11 +13104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\felip\\Documents\\Udemy-cursos\\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\\SOL.Identity\\WebApp.Identity\\WebApp.Identity.csproj",
+      "projectUniqueName": "C:\\Users\\felip\\Documents\\Cursos\\Udemy\\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\\SOL.Identity\\WebApp.Identity\\WebApp.Identity.csproj",
       "projectName": "WebApp.Identity",
-      "projectPath": "C:\\Users\\felip\\Documents\\Udemy-cursos\\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\\SOL.Identity\\WebApp.Identity\\WebApp.Identity.csproj",
+      "projectPath": "C:\\Users\\felip\\Documents\\Cursos\\Udemy\\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\\SOL.Identity\\WebApp.Identity\\WebApp.Identity.csproj",
       "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\felip\\Documents\\Udemy-cursos\\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\\SOL.Identity\\WebApp.Identity\\obj\\",
+      "outputPath": "C:\\Users\\felip\\Documents\\Cursos\\Udemy\\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\\SOL.Identity\\WebApp.Identity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -13215,7 +13215,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
       }
     }
   }

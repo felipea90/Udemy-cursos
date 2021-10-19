@@ -43,14 +43,31 @@ namespace WebApp.Identity
                 .GetTypeInfo().Assembly
                 .GetName().Name;
 
-            services.AddDbContext<IdentityDbContext>(opt => opt.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationAssembly)));
+            services.AddDbContext<MyUserDbContext>(opt => opt.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationAssembly)));
 
-            services.AddIdentityCore<IdentityUser>(options => { });
+            services.AddIdentity<MyUser, IdentityRole>(options => 
+            {
+                options.SignIn.RequireConfirmedEmail = true;
+                
+                options.Password.RequireDigit = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 4;
 
-            services.AddScoped<IUserStore<IdentityUser>, UserOnlyStore<IdentityUser, IdentityDbContext>>();
+                options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.AllowedForNewUsers = true;
+            })
+                .AddEntityFrameworkStores<MyUserDbContext>()
+                .AddDefaultTokenProviders()
+                .AddPasswordValidator<DoesNotContainPasswordValidator<MyUser>>();
 
-            services.AddAuthentication("cookies")
-                .AddCookie("cookies", options => options.LoginPath = "/Home/Login");
+            services.AddScoped<IUserClaimsPrincipalFactory<MyUser>, MyUserClaimsPrincipalFactory>();
+
+            services.Configure<DataProtectionTokenProviderOptions>(
+                options => options.TokenLifespan = TimeSpan.FromHours(3));
+
+            services.ConfigureApplicationCookie(options => options.LoginPath = "/Home/Login");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
