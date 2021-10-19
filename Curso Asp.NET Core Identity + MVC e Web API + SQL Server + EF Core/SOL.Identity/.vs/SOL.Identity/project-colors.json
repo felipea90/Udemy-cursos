@@ -10,7 +10,27 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "379da7e0-f6c6-4cea-b5b0-df5ec70ca96b": {
+      "ProjectGuid": "379da7e0-f6c6-4cea-b5b0-df5ec70ca96b",
+      "DisplayName": "WebAPI.Identity",
+      "ColorIndex": 1
+    },
+    "8e786b5b-dfd3-45c2-a9a2-efe97ef2ab5a": {
+      "ProjectGuid": "8e786b5b-dfd3-45c2-a9a2-efe97ef2ab5a",
+      "DisplayName": "WebAPI.Identity",
+      "ColorIndex": 2
+    },
+    "76347d03-f893-462b-b028-96aa32c99028": {
+      "ProjectGuid": "76347d03-f893-462b-b028-96aa32c99028",
+      "DisplayName": "WebAPI.Domain",
+      "ColorIndex": 3
+    },
+    "4afbaaf9-43e1-4745-bee5-79cb94f4bfff": {
+      "ProjectGuid": "4afbaaf9-43e1-4745-bee5-79cb94f4bfff",
+      "DisplayName": "WebAPI.Repository",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 5
 }
