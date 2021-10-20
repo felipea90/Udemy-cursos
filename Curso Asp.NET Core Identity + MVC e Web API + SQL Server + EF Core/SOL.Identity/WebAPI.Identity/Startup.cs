@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -18,6 +19,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using WebAPI.Domain;
+using WebAPI.Identity.Helper;
 using WebAPI.Repository;
 
 namespace WebAPI.Identity
@@ -45,7 +47,7 @@ namespace WebAPI.Identity
 
             services.AddIdentity<User, Role>(options =>
             {
-                options.SignIn.RequireConfirmedEmail = true;
+                //options.SignIn.RequireConfirmedEmail = true;
 
                 options.Password.RequireDigit = false;
                 options.Password.RequireNonAlphanumeric = false;
@@ -79,6 +81,15 @@ namespace WebAPI.Identity
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
                 .AddJsonOptions(opt => 
                     opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new AutoMapperProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+
+            services.AddSingleton(mapper);
 
             services.AddCors();
         }

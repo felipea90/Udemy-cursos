@@ -37,11 +37,10 @@ namespace WebAPI.Identity.Controllers
             _mapper = mapper;
         }
 
-        // GET: api/<UserController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(new UserDto());
         }
 
         [HttpPost("Login")]
@@ -63,7 +62,7 @@ namespace WebAPI.Identity.Controllers
                     return Ok(new
                     {
                         token = GenerateJWToken(appUser).Result,
-                        user = appUser
+                        user = userToReturn
                     });
                     
                 }
@@ -92,7 +91,8 @@ namespace WebAPI.Identity.Controllers
                     user = new User()
                     {
                         UserName = model.UserName,
-                        Email = model.UserName
+                        Email = model.UserName,
+                        NomeCompleto = model.NomeCompleto
                     };
 
                     var result = await _userManager.CreateAsync(user, model.Password);
@@ -103,15 +103,17 @@ namespace WebAPI.Identity.Controllers
                         
                         var token = GenerateJWToken(appUser).Result;
 
-                        var confirmationEmail = Url.Action("ConfirmEmailAddress", "Home",
-                            new
-                            {
-                                token = token,
-                                email = user.Email
-                            },
-                            Request.Scheme);
+                        //var confirmationEmail = Url.Action("ConfirmEmailAddress", "Home",
+                        //    new
+                        //    {
+                        //        token = token,
+                        //        email = user.Email
+                        //    },
+                        //    Request.Scheme);
 
-                        System.IO.File.WriteAllText("confirmationEmail.txt", confirmationEmail);
+                        //System.IO.File.WriteAllText("confirmationEmail.txt", confirmationEmail);
+
+                        return Ok(token);
                     }
                 }
 
