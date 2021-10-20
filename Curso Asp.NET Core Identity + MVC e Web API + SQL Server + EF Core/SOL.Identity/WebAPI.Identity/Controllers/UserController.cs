@@ -1,9 +1,18 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
 using WebAPI.Domain;
+using WebAPI.Identity.DTO;
 
 namespace WebAPI.Identity.Controllers
 {
@@ -43,9 +52,83 @@ namespace WebAPI.Identity.Controllers
         }
 
         // POST api/<UserController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register(
+            [FromBody] UserDto model)
         {
+            try
+            {
+                var user = await _userManager.FindByNameAsync(model.UserName);
+
+                if (user == null)
+                {
+                    user = new User()
+                    {
+                        UserName = model.UserName,
+                        Email = model.UserName
+                    };
+
+                    var result = await _userManager.CreateAsync(user, model.Password);
+
+                    if (result.Succeeded)
+                    {
+                        var appUser = _userManager.Users.FirstOrDefault(u => u.NormalizedUserName == user.UserName.ToUpper());
+                        
+                        var token = GenerateJWToken(appUser).Result;
+
+                        var confirmationEmail = Url.Action("ConfirmEmailAddress", "Home",
+                            new
+                            {
+                                token = token,
+                                email = user.Email
+                            },
+                            Request.Scheme);
+
+                        System.IO.File.WriteAllText("confirmationEmail.txt", confirmationEmail);
+                    }
+                }
+
+                return Unauthorized();
+            }
+            catch (Exception ex)
+            {
+                return this.StatusCode(
+                    StatusCodes.Status500InternalServerError, 
+                    $"ERROR {ex.Message}");
+            }
+        }
+
+        private async Task<string> GenerateJWToken(User user)
+        {
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Name, user.UserName)
+            };
+
+            var roles = await _userManager.GetRolesAsync(user);
+
+            foreach(var role in roles)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, role));
+            }
+
+            var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_config.GetSection("AppSettings:Token").Value));
+
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+
+            var tokenDescription = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.Now.AddDays(1),
+                SigningCredentials = creds
+            };
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+
+            var token = tokenHandler.CreateToken(tokenDescription);
+
+            return tokenHandler.WriteToken(token);
         }
 
         // PUT api/<UserController>/5
