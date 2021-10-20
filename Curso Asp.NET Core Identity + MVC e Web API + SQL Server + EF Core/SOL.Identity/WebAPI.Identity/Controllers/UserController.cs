@@ -44,11 +44,38 @@ namespace WebAPI.Identity.Controllers
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<UserController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login(
+            [FromBody] UserLoginDto loginDto)
         {
-            return "value";
+            try
+            {
+                var user = await _userManager.FindByNameAsync(loginDto.UserName);
+
+                var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
+
+                if (result.Succeeded)
+                {
+                    var appUser = _userManager.Users.FirstOrDefault(u => u.NormalizedUserName == user.UserName.ToUpper());
+
+                    var userToReturn = _mapper.Map<UserDto>(appUser);
+
+                    return Ok(new
+                    {
+                        token = GenerateJWToken(appUser).Result,
+                        user = appUser
+                    });
+                    
+                }
+
+                return Unauthorized();
+            }
+            catch (Exception ex)
+            {
+                return this.StatusCode(
+                    StatusCodes.Status500InternalServerError,
+                    $"ERROR {ex.Message}");
+            }
         }
 
         // POST api/<UserController>
