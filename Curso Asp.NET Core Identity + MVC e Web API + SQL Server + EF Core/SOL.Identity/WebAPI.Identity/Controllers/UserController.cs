@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -37,12 +38,14 @@ namespace WebAPI.Identity.Controllers
             _mapper = mapper;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult Get()
         {
             return Ok(new UserDto());
         }
 
+        [AllowAnonymous]
         [HttpPost("Login")]
         public async Task<IActionResult> Login(
             [FromBody] UserLoginDto loginDto)
@@ -77,7 +80,7 @@ namespace WebAPI.Identity.Controllers
             }
         }
 
-        // POST api/<UserController>
+        [AllowAnonymous]
         [HttpPost("Register")]
         public async Task<IActionResult> Register(
             [FromBody] UserDto model)
