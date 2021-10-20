@@ -1,0 +1,13 @@
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\bin\Debug\netcoreapp2.0\WebAPI.Repository.deps.json
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\bin\Debug\netcoreapp2.0\WebAPI.Repository.dll
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\bin\Debug\netcoreapp2.0\WebAPI.Repository.pdb
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\bin\Debug\netcoreapp2.0\WebAPI.Domain.dll
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\bin\Debug\netcoreapp2.0\WebAPI.Domain.pdb
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\obj\Debug\netcoreapp2.0\WebAPI.Repository.csproj.AssemblyReference.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\obj\Debug\netcoreapp2.0\WebAPI.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\obj\Debug\netcoreapp2.0\WebAPI.Repository.AssemblyInfoInputs.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\obj\Debug\netcoreapp2.0\WebAPI.Repository.AssemblyInfo.cs
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\obj\Debug\netcoreapp2.0\WebAPI.Repository.csproj.CoreCompileInputs.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\obj\Debug\netcoreapp2.0\WebAPI.Repository.csproj.CopyComplete
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\obj\Debug\netcoreapp2.0\WebAPI.Repository.dll
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Repository\obj\Debug\netcoreapp2.0\WebAPI.Repository.pdb

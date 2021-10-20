@@ -1,0 +1,10 @@
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.csproj.AssemblyReference.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.AssemblyInfoInputs.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.AssemblyInfo.cs
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.csproj.CoreCompileInputs.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.TagHelpers.input.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.TagHelpers.output.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.dll
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Identity\obj\Debug\netcoreapp3.1\WebAPI.Identity.pdb

@@ -1,0 +1,10 @@
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\bin\Debug\netcoreapp2.0\WebAPI.Domain.deps.json
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\bin\Debug\netcoreapp2.0\WebAPI.Domain.dll
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\bin\Debug\netcoreapp2.0\WebAPI.Domain.pdb
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\obj\Debug\netcoreapp2.0\WebAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\obj\Debug\netcoreapp2.0\WebAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\obj\Debug\netcoreapp2.0\WebAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\obj\Debug\netcoreapp2.0\WebAPI.Domain.AssemblyInfo.cs
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\obj\Debug\netcoreapp2.0\WebAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\obj\Debug\netcoreapp2.0\WebAPI.Domain.dll
+C:\Users\felip\Documents\Cursos\Udemy\Curso Asp.NET Core Identity + MVC e Web API + SQL Server + EF Core\SOL.Identity\WebAPI.Domain\obj\Debug\netcoreapp2.0\WebAPI.Domain.pdb
